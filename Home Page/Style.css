@@ -1,0 +1,491 @@
+body {
+    margin: 0px 0px;
+}
+a {
+    text-decoration: none;
+    color: var(--navigation-text-color);
+}
+.pagecontainer {
+    background-color: #f9f9f4;
+    box-sizing: border-box;
+    /* Styles for the main content */
+    margin-left: 0;
+    transition: margin-left 0.3s;
+}
+
+.Announcement {
+    background: #dea8a8;
+    color: aliceblue;
+    text-align: center;
+    padding: 12px 15px;
+}
+
+/*The code inside here is for all the header content that includes
+header, flex-itemleft, and flex-logo*/
+.header {
+    text-decoration-style: solid;
+    font-style: italic;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0px;
+   
+}
+
+.flex-item-left {
+    width: 1260px;
+    padding: 40px;
+}
+.flex-item-right {
+    width: 1260px;
+    padding-left: 350px;
+}
+
+.flex-logo {
+    text-align: center;
+    width: 165px;
+    margin-left: 200px;
+}
+
+/*The code over here is icons on to the header nav bar
+that includes manu,login,search,cart*/
+.Menu {
+    cursor: pointer;
+}
+
+.login {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.search {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.cart {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.search-header {
+    height: 75px;
+    box-sizing: border-box;
+}
+
+#search-input {
+    margin-left: 80px;
+    margin-right: 50px;
+    width: 1000px;
+    height: 60px;
+    font-size: larger;
+    border-style: hidden;
+    background-color: #f9f9f4;
+}
+
+.search2 {
+    margin-left: 40px;
+}
+
+.close {
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*The code over here is for totally side bar handling code
+that includes the content Side-Bar, content-SideBar and others include in it*/
+.Side-Bar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    /* Initial position off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+.content-SideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 160px;
+    margin-left: 60px;
+}
+.content-SideBar :hover{
+    color: black;
+}
+.Home {
+    border-bottom: black;
+    width: 230px;
+    height: 60px;
+    margin: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(207, 200, 200);
+    color:  rgb(117, 115, 115);
+}
+
+.BesttSellers {
+    border-bottom: black;
+    color:  rgb(117, 115, 115);
+    height: 60px;
+    width: 230px;
+    margin: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(207, 200, 200);
+}
+
+.NewArrivals {
+    border-bottom: black;
+    color:  rgb(117, 115, 115);
+    height: 60px;
+    width: 230px;
+    margin: 10px;
+    border-bottom-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(207, 200, 200);
+}
+
+.Account {
+    border-bottom: black;
+    color:  rgb(117, 115, 115);
+    height: 60px;
+    width: 230px;
+    margin: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(207, 200, 200);
+}
+
+/* Styles for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    z-index: 1;
+}
+
+/* Open the sidebar */
+.Side-Bar.active {
+    left: 0;
+}
+
+/* Show the overlay */
+.overlay.active {
+    display: block;
+}
+
+/* Shift the main content when the sidebar is open */
+.pagecontainer.active {
+    margin-left: 250px;
+}
+
+.closebtn {
+    margin-top: 25px;
+    margin-left: 30px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.Main-SideBar-Options {
+    margin-left: 30px;
+    margin-top: 25px;
+    height: 200px;
+}
+
+/*  The code over here is for handling Animated images in fronyt of the page
+    that includes th Poster and img*/
+.Poster {
+    width: 1262px;
+    height: 950px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.Poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* In the below code duration time is 16s so that each img will get displapy for 4s 
+and delay time for first img is nothinf for 2nd img is 4s that it will display after the 4s of 1st img*/
+.Poster img:first-child {
+    animation: imageRotation 16s infinite;
+}
+
+.Poster img:nth-child(2) {
+    animation: imageRotation 16s infinite 4s;
+    /* Delay the second image by 3 seconds */
+}
+
+.Poster img:nth-child(3) {
+    animation: imageRotation 16s infinite 8s;
+    /* Delay the third image by 6 seconds */
+}
+
+.Poster img:nth-child(4) {
+    animation: imageRotation 16s infinite 12s;
+    /* Delay the third image by 9 seconds */
+}
+
+@keyframes imageRotation {
+
+    0%,
+    25% {
+        opacity: 1;
+    }
+
+    25%,
+    50% {
+        opacity: 1;
+    }
+
+    50%,
+    75% {
+        opacity: 0;
+    }
+
+    75%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/*This is the code for now dresses and the given code is for Popular dress section
+  This icludes Most-Popular-dress, Text, txt1 , txt2, Pplr dress, Button*/
+.Most-Poupular-Dress {
+    height: 750px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(207, 200, 200);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.Text {
+    margin-bottom: 70px;
+}
+
+.txt1 {
+    margin-top: -.325em;
+    font-size: 13px;
+    color: rgb(117, 115, 115);
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    color: var(--heading-color);
+    transition: color .2s ease-in-out;
+}
+
+.txt2 {
+    margin-top: 16px;
+    font-size: 22px;
+    color: rgb(117, 115, 115);
+    margin-bottom: 0px;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    color: var(--heading-color);
+}
+
+.Pplr-dress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Pplr-dress img {
+    cursor: pointer;
+}
+
+.Button {
+    width: 214px;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #e3bdbd;
+    border: none;
+    margin-top: 50px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.Button:hover {
+    background-color: #e1b5b5;
+
+}
+
+/* The given code is for Best Sellers section
+  This icludes Best-Sellers, BestSellers, BestSellers img*/
+.Best-Sellers {
+    height: 700px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(207, 200, 200);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.BestSellers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.BestSellers img {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* The given code is for New Atrrivals section
+  This icludes New-Arrivals, Arrivals, Arrivals img*/
+.New-Arrivals {
+    height: 700px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(207, 200, 200);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.Arrivals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Arrivals img {
+    padding: 10px;
+    cursor: pointer;
+}
+/* The given code is for Footer section*/
+.footer {
+    height: 644px;
+    padding-top: 75px;
+    padding-bottom: 42px;
+}
+.container{
+    padding: 0px 80px;
+    height: 620px;
+}
+.Inner{
+    width: 1184px;
+    height: 493px;
+    margin: 0px -40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.AboutUs{
+    padding: 0px 25px;
+    width: 400px;
+    height: 443px;
+    margin-bottom: 50px;
+}
+.heading{
+    color: rgb(94, 92, 92);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    transition: color .2s ease-in-out;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+p{
+    word-break: break-word;
+    color: rgb(128, 125, 125);
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 15px;
+
+}
+.QuickLinks{
+    padding: 0px 25px;
+    width: 131px;
+    height: 402px;
+    margin-bottom: 50px;
+}
+.QuickLinks li{
+    list-style: none;
+    padding: 0px;
+    width: 161px;
+    max-height: 22.5px;
+}
+.Links{
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    line-height: 1.5;
+    text-align: left;
+    transition: all .2s ease-in-out;
+    color: rgb(128, 125, 125);
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 15px;
+}
+.HotCategories{
+    width: 198px;
+    padding: 0px 25px; 
+    height: 443px;
+    margin-bottom: 50px;
+}
+.Newsletter{
+    width: 210px;
+    padding: 0px 25px; 
+    height: 443px;
+    margin-bottom: 50px;
+}
+#inputField{
+    width:220px;
+    height: 45px;
+    background-color: #f9f9f4;
+    color: rgb(128, 125, 125);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 200, 200);
+    text-align: center;
+    font-size: 15px;
+}
+.Button2{
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #e3bdbd;
+    border: none;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+

@@ -1,0 +1,82 @@
+body {
+    margin: 0px 0px;
+    background-color: #f5f5f5;
+}
+.mainpage{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 70px;
+    margin-bottom: 25px;
+    margin-left: 128px;
+    margin-right: 128px;
+    width: 544px;
+    height: 456px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.login-card{
+
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 21px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20px;
+}
+main{
+    width: 502px;
+    height: 238px;
+}
+.heading1{
+    font-family: 'Inconsolata', monospace;
+font-family: 'Open Sans', sans-serif;
+font-size: 22px;
+color: rgb(66, 64, 64);
+}
+.heading2{
+    font-family: 'Inconsolata', monospace;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+color: rgb(106, 103, 103);
+font-size: 14px;
+}
+.Form{
+    display: flex;
+    justify-content: center;
+}
+#inputField{
+    width: 490px;
+    height: 42px;
+    margin-bottom: 10px;  
+}
+
+.heading3{
+    font-family: 'Inconsolata', monospace;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+color: rgb(86, 83, 83);
+font-size: 15px;
+}
+.Button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+.Button2{
+    text-align: center;
+
+}
+.text{
+    text-align: center;
+}

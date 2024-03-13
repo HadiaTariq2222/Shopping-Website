@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissfull</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+    <div class="Side-Bar" id="SB">
+        <section id="SideBar-Menu">
+            <div class="closebtn" id="CB" onclick="closeSidebar()">
+                <span class="close-Menu" id="closebtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </span>
+            </div>
+            <div class="content-SideBar">
+                <div class="Home"><a href="Html.html">Home</a></div>
+                <div class="BesttSellers"><a href="Best Sellers.html">Best Sellers</a></div>
+                <div class="NewArrivals"><a href="New Arrivals.html">New Arrivals</a></div>
+                <div class="Account"><a href="Account.html">ACCOUNT</a></div>
+            </div>
+        </section>
+    </div>
+    <div class="pagecontainer" id=".content">
+        <div class="Announcement">
+            🤝 TRUSTED +650 GOOGLE & FB REVIEWS (4.9/5)
+        </div>
+        <header>
+            <div class="header">
+                <div class="flex-item-left">
+                    <span class="Menu" id="MenuIcon" onclick="toggleSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="flex-logo">
+                    <a href="Logo.png"><img src="Logo.png" alt="Logo" style="width: 165px;height: 90px;"></a>
+                </div>
+                <div class="flex-item-right">
+                    <span class="login">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+                    </span>
+                    <span class="search" id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                    <span class="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-bag" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="search-header" id="searchBar">
+                <span class="search2" id="serach2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </span>
+                <input type="text" id="search-input" placeholder="Search...">
+                <span class="close" id="close butt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </span>
+            </div>
+        </header>
+        <main>
+            <div class="Poster" id="Poster">
+                <img src="White.jpeg" height="950px" width="1262px">
+                <img src="Grey.jpeg" height="950px" width="1262px">
+                <img src="Pink dark.jpeg" height="950px" width="1262px">
+                <img src="Check.jpeg" height="950px" width="1262px">
+            </div>
+            <div class="Most-Poupular-Dress">
+                <div class="Text">
+                    <h3 class="txt1">Shop your favorites</h3>
+                    <h2 class="txt2"><sup>Celebrity Lookbook</sup></h2>
+                </div>
+                <div class="Pplr-dress">
+                    <img src="Untitled design.png" height="550px" width="389px">
+                    <button type="button" class="Button">VIEW THIS PRODUCT</button>
+
+                </div>
+            </div>
+            <div class="Best-Sellers">
+                <div class="Text">
+                    <h3 class="txt1">our best sellers.....</h3>
+                    <h2 class="txt2"><sup>Blissfulls' Most Loved 💕</sup></h2>
+                </div>
+                <div class="BestSellers">
+                    <img src="Pink 2.jpeg" height="376px" width="250px">
+                    <img src="Darkk Dreeen.jpeg" height="376px" width="250px">
+                    <img src="Darkkk Bluee.jpeg" height="376px" width="250px">
+                    <img src="Pink 3.jpeg" height="376px" width="250px">
+                </div>
+                <div>
+                    <button type="button" class="Button">VIEW ALL PRODUCTS</button>
+                </div>
+            </div>
+            <div class="New-Arrivals">
+                <div class="Text">
+                    <h3 class="txt1">Shop new arrivals</h3>
+                    <h2 class="txt2"><sup>NEW ARRIVALS</sup></h2>
+                </div>
+                <div class="Arrivals">
+                    <img src="Pink 1.jpeg" height="376px" width="250px">
+                    <img src="Purple 1.jpeg" height="376px" width="250px">
+                    <img src="Green 3.jpeg" height="376px" width="250px">
+                    <img src="Purple 2.jpeg" height="376px" width="250px">
+
+                </div>
+                <div>
+                    <button type="button" class="Button">VIEW ALL PRODUCTS</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+            <div class="Inner">
+                <div class="AboutUs">
+                    <h2 class="heading">About Us</h2>
+                    <p>Sowears is an online store established to meet the demands of western attire for Pakistani women. Trendy, summery and exquisite dresses are the hotsellers of the brand.
+                        <br>
+                        Please Instagram DM us for general queries. 
+                        <br>
+                        <br>
+                        For exchanges, tracking and bank transfers, email us orders@Blissfull.net.
+                    </p>
+                </div>
+                <div class="QuickLinks">
+                    <h2 class="heading">Quick Links</h2>
+                              
+                       <li class="Links">Delivery Time</li> 
+                       <li class="Links">Gift Card 💌</li>
+                       <li class="Links">Returns & Exchanges</li> 
+                       <li class="Links">Contact Us</li> 
+                       <li class="Links">FAQ’s</li> 
+                       <li class="Links">Blog</li> 
+                       <li class="Links"> Behind the Brand</li>
+                       <li class="Links"> Privacy Policy</li>
+                       <li class="Links">Terms of Service</li> 
+                       <li class="Links">Refund policy</li> 
+                       <li class="Links"> Reviews ❤️</li>
+                    
+                </div>
+                <div class="HotCategories">
+                    <h2 class="heading">Hot Categories</h2>  
+                    <li class="Links">Western</li>
+                    <li class="Links">Mommy & Mini</li> 
+                    <li class="Links">Footwear</li> 
+                    <li class="Links">Accessories</li> 
+                    <li class="Links">Track your order 🚚</li>
+                </div>
+                <div class="Newsletter">
+                    <h2 class="heading">Newsletter</h2>
+                    <p>
+                        Subscribe to receive updates, access to exclusive deals, and more.
+                    </p>
+                    <form action="/submit" method="post">
+                        <input type="text" id="inputField" name="inputField" placeholder="Enter your Email Address" required>
+                        <br>
+                        <button type="button" class="Button2">SUBSCRIBE</button>
+                    </form>
+                </div>
+                
+            </div>
+            <h2 class="heading">@Blissfull</h2>
+            <p>BLISSFULLS FASHION LLC, USA</p>
+
+            </div>
+
+        </footer>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
